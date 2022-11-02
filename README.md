@@ -1,1 +1,3 @@
-# Hangman Milestone
+# Hangman-Milestone
+
+Project Description
