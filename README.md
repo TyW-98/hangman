@@ -3,10 +3,10 @@
 Hangman fruit game. It consist of 5 total different number of fruits. 
 
 ## Milestone 1 
-Setup of porject environment
+- Setup of project environment
 
 ## Milestone 2
-- Added fruit list
+- Added fruit list variable
 - Added randomiser 
 - Enabled user input
 - If statement to check for length of user input 
