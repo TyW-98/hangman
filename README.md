@@ -14,4 +14,5 @@ Setup of porject environment
 ## Milestone 3
 - Added While loop to only allow 1 letter input through
 - Added If statement to check if input letter is in the secret word
--
+- Created a function for the while loop 
+- Created a function to check if user input letter is in the secret word 
