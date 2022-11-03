@@ -9,6 +9,9 @@ Setup of porject environment
 - Added fruit list
 - Added randomiser 
 - Enabled user input
-- If Statement to check for length of user input 
+- If statement to check for length of user input 
 
 ## Milestone 3
+- Added While loop to only allow 1 letter input through
+- Added If statement to check if input letter is in the secret word
+-
