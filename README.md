@@ -1,6 +1,6 @@
 # Hangman Milestone
 
-Hangman fruit game. It consist of 5 total different number of fruits. 
+Hangman fruit game. It consist of 5 different fruits. 
 
 ## Milestone 1 
 Setup of porject environment
@@ -16,3 +16,6 @@ Setup of porject environment
 - Added If statement to check if input letter is in the secret word
 - Created a function for the while loop 
 - Created a function to check if user input letter is in the secret word 
+
+## Milestone 4
+- 
