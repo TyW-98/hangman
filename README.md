@@ -18,4 +18,6 @@ Setup of porject environment
 - Created a function to check if user input letter is in the secret word 
 
 ## Milestone 4
-- 
+- Added play_game function to run the game.
+- Play_game function uses hangman class to create instance
+- Added while loop 
