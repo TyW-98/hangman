@@ -18,4 +18,12 @@ Setup of porject environment
 - Created a function to check if user input letter is in the secret word.
 
 ## Milestone 4
-- 
+- Used OOP to build out the hangman class.
+- Created check_guess method to determine if the user's guess is in the word.
+- Replace blank underscore with corrently guessed letters
+- Deduct lives if guess is incorrect
+
+## Milestone 5
+- Added play_game function to run the game.
+- Play_game function uses hangman class to create instance
+- Added while loop to check for game condition
