@@ -48,9 +48,6 @@ class Hangman:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
                 break
-                
-
-# word_list = ["Watermelon", "Honeydew", "Mango", "Apple", "Orange"]
 
 def play_game(word_list):
     
@@ -66,11 +63,7 @@ def play_game(word_list):
         elif game.num_lives != 0 and game.num_letters == 0:
             print("You have correctly guessed the word")
             break
-        
-#x1.ask_for_input()
 
-#print(x1.list_of_guesses)
-
-word_list = ["orange"]
+word_list = ["Watermelon", "Honeydew", "Mango", "Apple", "Orange"]
 
 play_game(word_list)
