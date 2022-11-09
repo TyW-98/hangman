@@ -49,11 +49,29 @@ A hangman game that allows user to guess what is the fruit that is randomly sele
         else:
             print("Invalid number of letters. Please, enter a single alphabetical character.")
     ```
+* Created a `check_guess(letter)` function. This function takes in a letter to check if the letter is in the secret word. If the letter is in the secret_word, "Good guess! {letter.lower()} is in the word." will be printed or else, "Sorry, {letter.lower()} is not in the word. Try again.".
 
-- Added While loop to only allow 1 letter input through
-- Added If statement to check if input letter is in the secret word
-- Created a function for the while loop 
-- Created a function to check if user input letter is in the secret word 
+    ```go
+    def check_guess(letter):
+    if letter.lower() in secret_word:
+        print(f"Good guess! {letter.lower()} is in the word.")
+    else:
+        print(f"Sorry, {letter.lower()} is not in the word. Try again.")
+    ```
+* Created an `ask_for_input()` function. This function uses the `while` loop built early as well as the `check_guess(letter)` function.
+
+    ```go
+    def ask_for_input():
+    while True:
+        guess = input("Enter a letter: ")
+        
+        if len(guess) == 1:
+            break
+        else:
+            print("Invalid number of letters. Please, enter a single alphabetical character.")
+            
+    check_guess(guess)
+    ```
 ## Milestone 4
 - Used OOP to build out the hangman class.
 - Created check_guess method to determine if the user's guess is in the word.
@@ -63,7 +81,6 @@ A hangman game that allows user to guess what is the fruit that is randomly sele
 ## Milestone 5
 - Added play_game function to run the game.
 - Play_game function uses hangman class to create instance
-- Added while loop to check for game condition
-    
+- Added while loop to check for game condition  
 
 ## Conclusion
