@@ -13,9 +13,11 @@ A hangman game that allows user to guess what is the fruit that is randomly sele
 
 ## Milestone 2
 * Created a list of fruits and assigning it with the name `word_list`.
+
     ```go
     word_list = ["Watermelon", "Honeydew", "Mango", "Apple", "Orange"]
     ```
+
 * Import the random module to access the `random.choice()`. This method allow use to randomly select an element from the sequence that is passed it. The element is then assigned to a variable called `word`.
   
     ```go
@@ -35,7 +37,18 @@ A hangman game that allows user to guess what is the fruit that is randomly sele
         print("Oops! Input is greater than 1")
     ```
 ## Milestone 3
-* Using a `while` loop with `True` condition, this would allow the loop body to loop indefinitely. In the while loop, the `input()` function is used to ask for user input. The user input is then stored in a variable called `guess`.
+* By using a `while` loop with a `True` condition, this allows the loop to run indefinitely. In the while loop, the `input()` function is used to obtain the user input and store in a variable named `guess`. 
+* An `if` statement is also used to validate the length of the user input. If the length of user input equals to 1, a break statement is used to break out of the while loop. Else, the message "Invalid number of letters. Please, enter a single alphabetical character." will be printed. 
+
+    ```go
+    while True:
+        guess = input("Enter a letter: ")
+        
+        if len(guess) == 1:
+            break
+        else:
+            print("Invalid number of letters. Please, enter a single alphabetical character.")
+    ```
 
 - Added While loop to only allow 1 letter input through
 - Added If statement to check if input letter is in the secret word
@@ -52,6 +65,3 @@ A hangman game that allows user to guess what is the fruit that is randomly sele
 - Added play_game function to run the game.
 - Play_game function uses hangman class to create instance
 - Added while loop to check for game condition
-    
-
-## Conclusion
