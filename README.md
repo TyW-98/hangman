@@ -91,7 +91,7 @@ A hangman game that allows user to guess what is the fruit that will be randomly
     5. word_list: The list of fruits.
     6. list_of_guesses: A list of letters that have already been tried. 
  
-* Created a check_guess method which will first check if the letter guessed is in the word. If the letter is in the word, a `for` loop is then used to loop through the word in order to replace the underscore with the correctly guessed letter.
+* Created a `check_guess(self,guess)` method which will first check if the letter guessed is in the word. If the letter is in the word, a `for` loop is then used to loop through the word in order to replace the underscore with the correctly guessed letter.
 * If the guessed letter is not in the word, 1 life will be taken away and the message "Oops! {guess.upper()} is not in the word" together with "You have {self.num_lives} lives left" will be printed.
   
     ```go
@@ -117,7 +117,25 @@ A hangman game that allows user to guess what is the fruit that will be randomly
              print(f"Oops! {guess.upper()} is not in the word")     
              print(f"You have {self.num_lives} lives left")
     ```
+* Created a `ask_for_input(self)` method. This method takes in the user input to check if the length of the input is equals to 1 and the letter inputed has not attempted before using `if` statements. 
 
+    ```go
+    def ask_for_input(self):
+        
+        print(self.word_guessed)
+        
+        while True:
+            guess = input("Enter a letter to guess the fruit: ")
+            
+            if len(guess) != 1:
+                print("Please only enter a single alphabetical character")
+            elif guess in self.list_of_guesses:
+                print(f"{guess} has already been tried")
+            else:
+                self.check_guess(guess)
+                self.list_of_guesses.append(guess)
+                break
+    ```
 ## Milestone 5
 - Added play_game function to run the game.
 - Play_game function uses hangman class to create instance
