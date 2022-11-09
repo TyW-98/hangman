@@ -1,6 +1,6 @@
 # Python Hangman Project
 
-A hangman game that allows user to guess what is the fruit that is randomly selected from a `word_list`. The `word_list` consist of the following fruits:
+A hangman game that allows user to guess what is the fruit that is randomly selected from a word_list. The word_list consist of the following fruits:
 
 * Watermelon
 * Honeydew
@@ -13,21 +13,47 @@ A hangman game that allows user to guess what is the fruit that is randomly sele
 
 ## Milestone 2
 * Created a list of fruits and assigning it with the name `word_list`.
-* Import the random module to access the <span style = "color: lightgreen">random.choice() </span>. This method allow use to randomly select an element from the sequence that is passed it. The element is then assigned to a variable called `word`.
+
+    ```go
+    word_list = ["Watermelon", "Honeydew", "Mango", "Apple", "Orange"]
     ```
+
+* Import the random module to access the `random.choice()`. This method allow use to randomly select an element from the sequence that is passed it. The element is then assigned to a variable called `word`.
+  
+    ```go
      word = random.choice(word_list) 
     ```
-* To get user input, the <span style = "color: lightgreen"> input() </span> function is used. The input function also allows custom messages to be displayed when the function is called. Subsequently, the user input is then store in the variable named `guess` as a string.
-    ```
+* To get user input, the `input()` function is used. The input function also allows custom messages to be displayed when the function is called. Subsequently, the user input is then store in the variable named `guess` as a string.
+  
+    ```go
     guess = input("Guess the fruit : ")
     ```
-* 
+* To check for the length of the user input, an `if` statement is used. If the length of the user input is equals to 1, "Good guess!" will be printed, else "Oops! Input is greater than 1" is printed. 
+  
+    ```go
+    if len(guess) == 1:
+        print("Good guess!")
+    else:
+        print("Oops! Input is greater than 1")
+    ```
 ## Milestone 3
-- Added While loop to only allow 1 letter input through.
-- Added If statement to check if input letter is in the secret word.
-- Created a function for the while loop. 
-- Created a function to check if user input letter is in the secret word.
+* By using a `while` loop with a `True` condition, this allows the loop to run indefinitely. In the while loop, the `input()` function is used to obtain the user input and store in a variable named `guess`. 
+* An `if` statement is also used to validate the length of the user input. If the length of user input equals to 1, a break statement is used to break out of the while loop. Else, the message "Invalid number of letters. Please, enter a single alphabetical character." will be printed. 
 
+    ```go
+    while True:
+        guess = input("Enter a letter: ")
+        
+        if len(guess) == 1:
+            break
+        else:
+            print("Invalid number of letters. Please, enter a single alphabetical character.")
+    ```
+
+- Added While loop to only allow 1 letter input through
+- Added If statement to check if input letter is in the secret word
+- Created a function for the while loop 
+- Created a function to check if user input letter is in the secret word 
 ## Milestone 4
 - Used OOP to build out the hangman class.
 - Created check_guess method to determine if the user's guess is in the word.
@@ -38,3 +64,6 @@ A hangman game that allows user to guess what is the fruit that is randomly sele
 - Added play_game function to run the game.
 - Play_game function uses hangman class to create instance
 - Added while loop to check for game condition
+    
+
+## Conclusion
