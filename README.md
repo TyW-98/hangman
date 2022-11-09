@@ -137,8 +137,26 @@ A hangman game that allows user to guess what is the fruit that will be randomly
                 break
     ```
 ## Milestone 5
-- Added play_game function to run the game.
-- Play_game function uses hangman class to create instance
-- Added while loop to check for game condition  
+* Created a function called `play_game(word_list)`. This function uses the Hangman class developed in `milestone_4.py`. A `while` loop with condition set to `True` is also used to monitor the condition of the game.  
 
-## Conclusion
+### Game conditions
+> 1. If `num_lives` is 0, the game ends and the message "Game over" is printed.
+> 1. Else if the `num_letters` is still greater than 0, then the game will still ask for user input.
+> 1. In order to win the game, the `num_lives` must not equals to 0 and `num_letters` must be equals to 0. When this happens, the message "You have correctly guessed the word" is printed.
+
+    ```go
+    def play_game(word_list):
+    
+    game = Hangman(word_list,num_lives = 5)  
+    
+    while True:
+        
+        if game.num_lives == 0:
+            print("Game Over")
+            break
+        elif game.num_letters > 0:
+            game.ask_for_input()
+        elif game.num_lives != 0 and game.num_letters == 0:
+            print("You have correctly guessed the word")
+            break
+    ```
