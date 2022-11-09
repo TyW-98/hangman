@@ -23,15 +23,19 @@ class Hangman:
                     
                     print(self.word_guessed)
                     
+            self.num_letters -= 1
+            #print(self.num_letters)
+                    
         else:
              self.num_lives -= 1  
              
              print(f"Oops! {guess.upper()} is not in the word")     
              print(f"You have {self.num_lives} lives left")
-
-        
         
     def ask_for_input(self):
+        
+        print(self.word_guessed)
+        
         while True:
             guess = input("Enter a letter to guess the fruit: ")
             
@@ -42,6 +46,7 @@ class Hangman:
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
+                break
 
 x1= Hangman(["apple"])
 
