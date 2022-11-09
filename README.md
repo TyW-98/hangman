@@ -12,13 +12,16 @@ A hangman game that allows user to guess what is the fruit that is randomly sele
 * Setup of GitHub repository to store project files.
 
 ## Milestone 2
-* Created a list of fruits and assigning it with the name word_list.
-* Import the random module to access the `random.choice()`. This method allow use to randomly select an element from the sequence that is passed it. The element is then assigned to a variable called word.
+* Created a list of fruits and assigning it with the name `word_list`.
+    ```go
+    word_list = ["Watermelon", "Honeydew", "Mango", "Apple", "Orange"]
+    ```
+* Import the random module to access the `random.choice()`. This method allow use to randomly select an element from the sequence that is passed it. The element is then assigned to a variable called `word`.
   
     ```go
      word = random.choice(word_list) 
     ```
-* To get user input, the `input()` function is used. The input function also allows custom messages to be displayed when the function is called. Subsequently, the user input is then store in the variable named guess as a string.
+* To get user input, the `input()` function is used. The input function also allows custom messages to be displayed when the function is called. Subsequently, the user input is then store in the variable named `guess` as a string.
   
     ```go
     guess = input("Guess the fruit : ")
@@ -32,6 +35,8 @@ A hangman game that allows user to guess what is the fruit that is randomly sele
         print("Oops! Input is greater than 1")
     ```
 ## Milestone 3
+* Using a `while` loop with `True` condition, this would allow the loop body to loop indefinitely. In the while loop, the `input()` function is used to ask for user input. The user input is then stored in a variable called `guess`.
+
 - Added While loop to only allow 1 letter input through
 - Added If statement to check if input letter is in the secret word
 - Created a function for the while loop 
