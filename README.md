@@ -1,6 +1,6 @@
 # Python Hangman Project
 
-A hangman game that allows user to guess what is the fruit that is randomly selected from a `word_list`. The `word_list` consist of the following fruits:
+A hangman game that allows user to guess what is the fruit that is randomly selected from a word_list. The word_list consist of the following fruits:
 
 * Watermelon
 * Honeydew
@@ -12,16 +12,25 @@ A hangman game that allows user to guess what is the fruit that is randomly sele
 * Setup of GitHub repository to store project files.
 
 ## Milestone 2
-* Created a list of fruits and assigning it with the name `word_list`.
-* Import the random module to access the <span style = "color: lightgreen">random.choice() </span>. This method allow use to randomly select an element from the sequence that is passed it. The element is then assigned to a variable called `word`.
-    ```
+* Created a list of fruits and assigning it with the name word_list.
+* Import the random module to access the `random.choice()`. This method allow use to randomly select an element from the sequence that is passed it. The element is then assigned to a variable called word.
+  
+    ```go
      word = random.choice(word_list) 
     ```
-* To get user input, the <span style = "color: lightgreen"> input() </span> function is used. The input function also allows custom messages to be displayed when the function is called. Subsequently, the user input is then store in the variable named `guess` as a string.
-    ```
+* To get user input, the `input()` function is used. The input function also allows custom messages to be displayed when the function is called. Subsequently, the user input is then store in the variable named guess as a string.
+  
+    ```go
     guess = input("Guess the fruit : ")
     ```
-* 
+* To check for the length of the user input, an `if` statement is used. If the length of the user input is equals to 1, "Good guess!" will be printed, else "Oops! Input is greater than 1" is printed. 
+  
+    ```go
+    if len(guess) == 1:
+        print("Good guess!")
+    else:
+        print("Oops! Input is greater than 1")
+    ```
 ## Milestone 3
 - Added While loop to only allow 1 letter input through.
 - Added If statement to check if input letter is in the secret word.
